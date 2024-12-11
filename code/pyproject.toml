@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "kairos"
+version = "0.1.0"
+description = ""
+authors = ["Maciej Rapacz <mrapacz@agh.edu.pl>"]
+readme = "README.md"
+packages = [
+    { include = "kairos", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "2.2.2"
+datasets = "^3.0.2"
+evaluate = "^0.4.3"
+transformers = "4.31.0"  # double check before you upgrade this - at 4.46.0 it breaks morph training
+levenshtein = "^0.26.1"
+loguru = "^0.7.2"
+more-itertools = "^10.5.0"
+neptune = "^1.12.0"
+tensorboard = "^2.18.0"
+typer = "^0.12.5"
+numpy = "<2"
+sentencepiece = "^0.2.0"
+sacrebleu = "^2.4.3"
+rouge-score = "^0.1.2"
+prettytable = "^3.12.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+ruff = "^0.7.1"
+mypy = "^1.13.0"
+pytest = "^8.3.3"
+ipython = "^8.29.0"
+jupyterlab = "^4.2.5"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.2"
+ipdb = "^0.13.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+train-kairos = "kairos.main:main"
