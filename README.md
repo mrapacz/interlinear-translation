@@ -3,8 +3,11 @@
 This is a repository holding the resources related to the `Low-Resource Interlinear Translation: Morphology-Enhanced Neural Models for Ancient Greek` paper presented at the LoResLM @ COLING2025 workshop.
 
 For code used for training the models, see https://github.com/mrapacz/loreslm-interlinear-translation/tree/main/code
-For the models, see TBD
-For the dataset, see https://huggingface.co/datasets/mrapacz/greek-interlinear-translations
+For the models, see:
+- https://huggingface.co/mrapacz/loreslm-interlinear-en
+- https://huggingface.co/mrapacz/loreslm-interlinear-pl
+For the dataset, see:
+- https://huggingface.co/datasets/mrapacz/greek-interlinear-translations
 
 ## License
 
