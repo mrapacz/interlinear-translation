@@ -17,6 +17,4 @@ The resources - unless otherwise specified - are licensed under the [CC BY-NC-SA
 
 ## Citation
 
-```
 Maciej Rapacz and Aleksander Smywiński-Pohl. 2025. Low-Resource Interlinear Translation: Morphology-Enhanced Neural Models for Ancient Greek. In Proceedings of the 1st Workshop on Language Models for Low-Resource Languages (LoResLM2025), Abu Dhabi, UAE. International Committee on Computational Linguistics.
-```
