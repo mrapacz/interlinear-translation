@@ -3,6 +3,7 @@
 This is a repository holding the resources related to the `Low-Resource Interlinear Translation: Morphology-Enhanced Neural Models for Ancient Greek` paper presented at the [LoResLM@COLING2025 workshop](https://loreslm.github.io/).
 
 The article is available at: https://aclanthology.org/2025.loreslm-1.11/
+
 To view the conference poster, see [./resources/poster.pdf](./resources/poster.pdf).
 
 ## Resources
