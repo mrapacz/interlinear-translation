@@ -4,7 +4,7 @@ This repository contains resources for the paper "Low-Resource Interlinear Trans
 
 ## Quick Links
 - [Paper](https://aclanthology.org/2025.loreslm-1.11/)
-- [Conference Poster](./resources/Poster - LoResLM@COLING2025.pdf)
+- [Conference Poster](./resources/Poster%20-%20LoResLM@COLING2025.pdf)
 - [Dataset](https://huggingface.co/datasets/mrapacz/greek-interlinear-translations)
 - [Models GRC->EN](./resources/model_table_en.md)
 - [Models GRC->PL](./resources/model_table_pl.md)
