@@ -1,13 +1,6 @@
 import json
-import typing
-from itertools import chain
 from pathlib import Path
 from typing import Iterable
-
-if typing.TYPE_CHECKING:
-    from datasets import Dataset
-
-from functools import reduce
 
 from transformers.utils import logging
 
@@ -148,23 +141,6 @@ class MorphTokenizer:
         """Initialize vocabulary from list of tags."""
         unique_tags = set(tags)
         self.morph_encodings = {token: idx for idx, token in enumerate(list(self._special_token_ids.keys()) + list(unique_tags))}
-
-    def initialize_vocab_from_dataset(self, dset: dict[str, "Dataset"], tags_col: str) -> None:
-        """Initialize vocabulary from dataset splits.
-
-        Args:
-            dset: Dictionary mapping split names to Dataset objects
-            tags_col: Name of the column containing tags
-        """
-        tags = chain.from_iterable(reduce(lambda x, y: x + y, (dset[split][tags_col] for split in dset)))
-        self.initialize_vocab(tags=tags)
-
-    def initialize_from_train_test(self, dset: dict[str, "Dataset"], tags_col: str) -> None:
-        """Calculates a set of unique tags present in the dataset."""
-        tags = list(self._special_token_ids.keys()) + list(
-            set(chain.from_iterable(dset["train"][tags_col] + dset["test"][tags_col]))
-        )
-        self.morph_encodings = {morph: i_morph for i_morph, morph in enumerate(tags)}
 
     def __repr__(self) -> str:
         """Return a detailed string representation of the tokenizer."""

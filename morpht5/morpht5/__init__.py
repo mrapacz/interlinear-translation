@@ -1,3 +1,4 @@
+from .constants import SentinelToken
 from .models import (
     MorphT5AutoConfig,
     MorphT5AutoForConditionalGeneration,
@@ -15,7 +16,6 @@ from .models import (
 from .tagsets import BibleHubTag, OblubienicaTag
 from .tokenizer import MorphT5Tokenizer, MorphTokenizer
 from .utils.formatting import format_interlinear
-from .constants import BLOCK_SEPARATOR
 
 __version__ = "0.1.0"
 
@@ -41,4 +41,6 @@ __all__ = [
     # Tokenizer
     "MorphTokenizer",
     "MorphT5Tokenizer",
+    # Constants
+    "SentinelToken",
 ]
