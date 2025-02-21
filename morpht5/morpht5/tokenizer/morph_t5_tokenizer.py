@@ -65,15 +65,13 @@ class MorphT5Tokenizer(PreTrainedTokenizer):
         **kwargs,
     ) -> "MorphT5Tokenizer":
         """Load both text and morphological tokenizers from a pretrained model."""
-        path = Path(pretrained_model_name_or_path)
-
         text_tokenizer = T5TokenizerFast.from_pretrained(
-            path,
+            pretrained_model_name_or_path,
             subfolder="text_tokenizer",
         )
 
         morph_tokenizer = MorphTokenizer.from_pretrained(
-            path,
+            pretrained_model_name_or_path,
             subfolder="morph_tokenizer",
         )
 
