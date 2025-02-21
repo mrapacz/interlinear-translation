@@ -17,7 +17,7 @@ from .tagsets import BibleHubTag, OblubienicaTag
 from .tokenizer import MorphT5Tokenizer, MorphTokenizer
 from .utils.formatting import format_interlinear
 
-__version__ = "0.1.0"
+__version__ = "0.2.1"
 
 __all__ = [
     # Tag sets

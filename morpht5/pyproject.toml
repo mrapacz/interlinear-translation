@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "morpht5"
-version = "0.2.0"
+version = "0.2.1"
 description = "A morphologically aware version of T5 model."
 authors = ["Maciej Rapacz <mrapacz@agh.edu.pl>"]
 license = "MIT"
