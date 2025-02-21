@@ -11,6 +11,11 @@ python = "^3.11"
 transformers = "^4"
 torch = "^2"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ipdb = "^0.13.13"
+ipython = "^8.32.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
