@@ -12,18 +12,7 @@ pip install morpht5
 
 ### Models
 
-The package provides several model variants through a unified interface:
-
-```python
-from morpht5 import (
-    MorphT5AutoModel,
-    MorphT5ConcatModel,
-    MorphT5SumModel,
-    MorphT5AutoForConditionalGeneration
-)
-```
-
-Three model variants, incorporating morphological features through dedicated embedding layers:
+The package includes three model variants, incorporating morphological features through dedicated embedding layers:
 - `MorphT5SumModel`: Model using positional summation for combining text and morphological tag embeddings
 - `MorphT5AutoModel`: Base model with autoencoder-style morphological tag embeddings
 - `MorphT5ConcatModel`: Model using concatenation for combining text and morphological tag embeddings
@@ -34,10 +23,26 @@ Three model variants, incorporating morphological features through dedicated emb
 The package comes with a tokenizer that allows for encoding text and morphological tags into tokens:
 
 ```python
-from morpht5 import MorphT5Tokenizer
+>>> from morpht5 import MorphT5Tokenizer
+>>> text = ["Λέγει", "αὐτῷ", "ὁ", "Ἰησοῦς", "Ἔγειρε", "ἆρον", "τὸν", "κράβαττόν", "σου", "καὶ", "περιπάτει"]
+>>> tags = [
+...     "V-PIA-3S",
+...     "PPro-DM3S",
+...     "Art-NMS",
+...     "N-NMS",
+...     "V-PMA-2S",
+...     "V-AMA-2S",
+...     "Art-AMS",
+...     "N-AMS",
+...     "PPro-G2S",
+...     "Conj",
+...     "V-PMA-2S",
+... ]
+>>> tokenizer = MorphT5Tokenizer.from_pretrained("mrapacz/interlinear-en-philta-emb-auto-diacritics-bh")
+>>> inputs = tokenizer(text=text, morph_tags=tags, return_tensors="pt")
+>>> inputs.keys()
+dict_keys(['input_ids', 'attention_mask', 'input_morphs'])
 ```
-
-
 
 ### Tagsets
 
@@ -62,18 +67,30 @@ The tagsets differ in their annotation style:
 - BibleHub: Compact format (e.g., `V-PIA-3S` for "Verb - Present Indicative Active - 3rd Person Singular")
 - Oblubienica: Verbose format (e.g., `vi Pres Act 3 Sg` for the same morphological information)
 
+```python
+>>> from morpht5 import BibleHubTag, OblubienicaTag
+>>> len(BibleHubTag)
+684
+>>> len(OblubienicaTag)
+1070
+```
 
-## Model Variants
+### Formatting
 
-The package includes several pre-trained models with different configurations:
-- Base model size (mT5-base) and Large model size (mT5-large)
-- Three morphological encoding strategies (auto, sum, concat)
-- Support for both tagsets (BibleHub and Oblubienica)
-- Target languages: English and Polish
+There's also a utility function for formatting interlinear translations:
 
-Best performing models achieve:
-- English translation: BLEU 56.24 (mT5-large with sum encoding)
-- Polish translation: BLEU 58.46 (mT5-large with sum encoding)
+```python
+>>> from morpht5.utils.formatting import format_interlinear
+>>> text = ['Λέγει', 'αὐτῷ', 'ὁ', 'Ἰησοῦς', 'Ἔγειρε', 'ἆρον', 'τὸν', 'κράβαττόν', 'σου', 'καὶ', 'περιπάτει']
+>>> tags = ['V-PIA-3S', 'PPro-DM3S', 'Art-NMS', 'N-NMS', 'V-PMA-2S', 'V-AMA-2S', 'Art-AMS', 'N-AMS', 'PPro-G2S', 'Conj', 'V-PMA-2S']
+>>> trans_pl = ['Mówi', 'mu', '-', 'Jezus', 'wstawaj', 'weź', '-', 'matę', 'swoją', 'i', 'chodź']
+>>> trans_en = ['says', 'to him', '-', 'jesus', 'arise', 'take up', '-', 'mat', 'of you', 'and', 'walk']
+>>> print(format_interlinear(text, tags, trans_en, trans_pl))
+ Λέγει   |    αὐτῷ   |    ὁ    | Ἰησοῦς |  Ἔγειρε  |   ἆρον   |   τὸν   | κράβαττόν |   σου    | καὶ  | περιπάτει
+V-PIA-3S | PPro-DM3S | Art-NMS | N-NMS  | V-PMA-2S | V-AMA-2S | Art-AMS |   N-AMS   | PPro-G2S | Conj |  V-PMA-2S
+  says   |   to him  |    -    | jesus  |  arise   | take up  |   the   |    mat    |  of you  | and  |    walk
+  Mówi   |     mu    |    -    | Jezus  | wstawaj  |   weź    |    -    |    matę   |  swoją   |  i   |   chodź
+```
 
 ## License
 
