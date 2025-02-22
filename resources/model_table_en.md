@@ -42,11 +42,11 @@ This table presents the performance metrics of various model configurations for 
 |`interlinear-en-mt5-large-t-w-t-diacritics-bh`|mT5-large|t-w-t (tags-within-text)|Bible Hub|Diacritics|46.00|0.83|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-t-w-t-diacritics-bh)|
 |`interlinear-en-mt5-large-t-w-t-diacritics-ob`|mT5-large|t-w-t (tags-within-text)|Oblubienica|Diacritics|45.59|0.83|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-t-w-t-diacritics-ob)|
 |`interlinear-en-philta-emb-concat-diacritics-ob`|PhilTa|emb-concat|Oblubienica|Diacritics|45.43|0.83|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-emb-concat-diacritics-ob)|
-|`interlinear-en-mt5-large-baseline-diacritics-unused`|mT5-large|baseline (text only, no morphological tags)|Unused|Diacritics|44.67|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-baseline-diacritics-unused)|
+|`interlinear-en-mt5-large-baseline-diacritics-unused`|mT5-large|baseline (text only)|Unused|Diacritics|44.67|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-baseline-diacritics-unused)|
 |`interlinear-en-mt5-large-t-w-t-normalized-bh`|mT5-large|t-w-t (tags-within-text)|Bible Hub|Normalized|43.97|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-t-w-t-normalized-bh)|
-|`interlinear-en-mt5-large-baseline-normalized-unused`|mT5-large|baseline (text only, no morphological tags)|Unused|Normalized|43.64|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-baseline-normalized-unused)|
+|`interlinear-en-mt5-large-baseline-normalized-unused`|mT5-large|baseline (text only)|Unused|Normalized|43.64|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-baseline-normalized-unused)|
 |`interlinear-en-mt5-base-emb-concat-diacritics-ob`|mT5-base|emb-concat|Oblubienica|Diacritics|42.59|0.80|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-emb-concat-diacritics-ob)|
-|`interlinear-en-philta-baseline-diacritics-unused`|PhilTa|baseline (text only, no morphological tags)|Unused|Diacritics|41.55|0.83|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-baseline-diacritics-unused)|
+|`interlinear-en-philta-baseline-diacritics-unused`|PhilTa|baseline (text only)|Unused|Diacritics|41.55|0.83|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-baseline-diacritics-unused)|
 |`interlinear-en-mt5-large-emb-concat-diacritics-ob`|mT5-large|emb-concat|Oblubienica|Diacritics|41.18|0.77|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-emb-concat-diacritics-ob)|
 |`interlinear-en-philta-t-w-t-diacritics-bh`|PhilTa|t-w-t (tags-within-text)|Bible Hub|Diacritics|40.95|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-t-w-t-diacritics-bh)|
 |`interlinear-en-philta-t-w-t-diacritics-ob`|PhilTa|t-w-t (tags-within-text)|Oblubienica|Diacritics|40.84|0.82|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-t-w-t-diacritics-ob)|
@@ -54,17 +54,17 @@ This table presents the performance metrics of various model configurations for 
 |`interlinear-en-mt5-large-t-w-t-normalized-ob`|mT5-large|t-w-t (tags-within-text)|Oblubienica|Normalized|35.47|0.78|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-large-t-w-t-normalized-ob)|
 |`interlinear-en-philta-t-w-t-normalized-bh`|PhilTa|t-w-t (tags-within-text)|Bible Hub|Normalized|34.25|0.76|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-t-w-t-normalized-bh)|
 |`interlinear-en-philta-t-w-t-normalized-ob`|PhilTa|t-w-t (tags-within-text)|Oblubienica|Normalized|33.44|0.76|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-t-w-t-normalized-ob)|
-|`interlinear-en-philta-baseline-normalized-unused`|PhilTa|baseline (text only, no morphological tags)|Unused|Normalized|33.24|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-baseline-normalized-unused)|
-|`interlinear-en-mt5-base-baseline-diacritics-unused`|mT5-base|baseline (text only, no morphological tags)|Unused|Diacritics|31.61|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-baseline-diacritics-unused)|
+|`interlinear-en-philta-baseline-normalized-unused`|PhilTa|baseline (text only)|Unused|Normalized|33.24|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-philta-baseline-normalized-unused)|
+|`interlinear-en-mt5-base-baseline-diacritics-unused`|mT5-base|baseline (text only)|Unused|Diacritics|31.61|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-baseline-diacritics-unused)|
 |`interlinear-en-mt5-base-t-w-t-diacritics-bh`|mT5-base|t-w-t (tags-within-text)|Bible Hub|Diacritics|30.11|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-t-w-t-diacritics-bh)|
-|`interlinear-en-mt5-base-baseline-normalized-unused`|mT5-base|baseline (text only, no morphological tags)|Unused|Normalized|29.99|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-baseline-normalized-unused)|
+|`interlinear-en-mt5-base-baseline-normalized-unused`|mT5-base|baseline (text only)|Unused|Normalized|29.99|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-baseline-normalized-unused)|
 |`interlinear-en-mt5-base-t-w-t-diacritics-ob`|mT5-base|t-w-t (tags-within-text)|Oblubienica|Diacritics|29.62|0.74|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-t-w-t-diacritics-ob)|
 |`interlinear-en-mt5-base-emb-auto-diacritics-bh`|mT5-base|emb-auto|Bible Hub|Diacritics|28.52|0.71|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-emb-auto-diacritics-bh)|
 |`interlinear-en-mt5-base-t-w-t-normalized-ob`|mT5-base|t-w-t (tags-within-text)|Oblubienica|Normalized|28.39|0.73|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-t-w-t-normalized-ob)|
 |`interlinear-en-mt5-base-t-w-t-normalized-bh`|mT5-base|t-w-t (tags-within-text)|Bible Hub|Normalized|27.59|0.72|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-t-w-t-normalized-bh)|
 |`interlinear-en-mt5-base-emb-concat-normalized-bh`|mT5-base|emb-concat|Bible Hub|Normalized|27.32|0.68|[🤗](https://huggingface.co/mrapacz/interlinear-en-mt5-base-emb-concat-normalized-bh)|
-|`interlinear-en-greta-baseline-diacritics-unused`|GreTa|baseline (text only, no morphological tags)|Unused|Diacritics|17.69|0.56|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-baseline-diacritics-unused)|
-|`interlinear-en-greta-baseline-normalized-unused`|GreTa|baseline (text only, no morphological tags)|Unused|Normalized|16.77|0.56|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-baseline-normalized-unused)|
+|`interlinear-en-greta-baseline-diacritics-unused`|GreTa|baseline (text only)|Unused|Diacritics|17.69|0.56|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-baseline-diacritics-unused)|
+|`interlinear-en-greta-baseline-normalized-unused`|GreTa|baseline (text only)|Unused|Normalized|16.77|0.56|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-baseline-normalized-unused)|
 |`interlinear-en-greta-t-w-t-normalized-bh`|GreTa|t-w-t (tags-within-text)|Bible Hub|Normalized|16.13|0.56|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-t-w-t-normalized-bh)|
 |`interlinear-en-greta-t-w-t-diacritics-bh`|GreTa|t-w-t (tags-within-text)|Bible Hub|Diacritics|14.70|0.55|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-t-w-t-diacritics-bh)|
 |`interlinear-en-greta-t-w-t-diacritics-ob`|GreTa|t-w-t (tags-within-text)|Oblubienica|Diacritics|14.51|0.55|[🤗](https://huggingface.co/mrapacz/interlinear-en-greta-t-w-t-diacritics-ob)|
