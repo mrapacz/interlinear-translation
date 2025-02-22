@@ -19,7 +19,7 @@ We present a novel approach to interlinear translation from Ancient Greek to Eng
 ## Resources
 
 ### Code
-- [Modified T5 Models](./morpht5) - Implementation of morphology-enhanced T5 models
+- [morpht5](./morpht5) - A package including morphology-enhanced T5 model implementations
 - [Training Code](./code) - Scripts used for model training and evaluation
 
 ### Models
