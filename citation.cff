@@ -27,7 +27,7 @@ keywords:
 license: "CC-BY-NC-SA-4.0"
 repository-code: "https://github.com/mrapacz/interlinear-translation"
 preferred-citation:
-  type: inproceedings # Based on the @inproceedings BibTeX entry
+  type: conference-paper
   authors:
     - given-names: "Maciej"
       family-names: "Rapacz"
